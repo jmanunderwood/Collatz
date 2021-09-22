@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collatz", "src\Collatz\Collatz.csproj", "{D4042758-6764-4870-9208-7464E1077713}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CollatzSetup", "src\CollatzSetup\CollatzSetup.vdproj", "{F92F69CC-5E56-4961-9DF1-738816BA7D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollatzUI", "src\CollatzUI\CollatzUI.csproj", "{1B334321-6068-42A4-AFE2-C3BE52171107}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4042758-6764-4870-9208-7464E1077713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4042758-6764-4870-9208-7464E1077713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4042758-6764-4870-9208-7464E1077713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4042758-6764-4870-9208-7464E1077713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92F69CC-5E56-4961-9DF1-738816BA7D22}.Debug|Any CPU.ActiveCfg = Debug
+		{F92F69CC-5E56-4961-9DF1-738816BA7D22}.Debug|Any CPU.Build.0 = Debug
+		{F92F69CC-5E56-4961-9DF1-738816BA7D22}.Release|Any CPU.ActiveCfg = Release
+		{F92F69CC-5E56-4961-9DF1-738816BA7D22}.Release|Any CPU.Build.0 = Release
+		{1B334321-6068-42A4-AFE2-C3BE52171107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B334321-6068-42A4-AFE2-C3BE52171107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B334321-6068-42A4-AFE2-C3BE52171107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B334321-6068-42A4-AFE2-C3BE52171107}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F799494F-CB41-4744-BBD4-F71525E6B51F}
+	EndGlobalSection
+EndGlobal

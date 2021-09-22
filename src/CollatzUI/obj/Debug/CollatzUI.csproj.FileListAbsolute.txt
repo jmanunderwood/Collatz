@@ -1,0 +1,9 @@
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\bin\Debug\CollatzUI.exe.config
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\bin\Debug\CollatzUI.exe
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\bin\Debug\CollatzUI.pdb
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\obj\Debug\CollatzUI.csprojAssemblyReference.cache
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\obj\Debug\CollatzUI.Properties.Resources.resources
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\obj\Debug\CollatzUI.csproj.GenerateResource.cache
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\obj\Debug\CollatzUI.csproj.CoreCompileInputs.cache
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\obj\Debug\CollatzUI.exe
+C:\Users\jmanu\source\repos\Collatz\src\CollatzUI\obj\Debug\CollatzUI.pdb
