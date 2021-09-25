@@ -7,7 +7,7 @@
     <StartArguments>-r 5 -s 5</StartArguments>
   </PropertyGroup>
   <PropertyGroup>
-    <PublishUrlHistory />
+    <PublishUrlHistory>C:\Users\jmanu\OneDrive\Desktop\Collatz\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory />
     <UpdateUrlHistory />

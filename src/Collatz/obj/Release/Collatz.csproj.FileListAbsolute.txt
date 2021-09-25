@@ -23,3 +23,8 @@ C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.csproj.CoreC
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.csproj.CopyComplete
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.exe
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.pdb
+C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Collatz.exe.manifest
+C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Collatz.application
+C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.TrustInfo.xml
+C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.exe.manifest
+C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.application
