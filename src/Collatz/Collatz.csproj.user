@@ -4,7 +4,7 @@
     <StartArguments>7</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>12</StartArguments>
+    <StartArguments>-r 5 -s 5</StartArguments>
   </PropertyGroup>
   <PropertyGroup>
     <PublishUrlHistory />
@@ -18,5 +18,8 @@
   </PropertyGroup>
   <PropertyGroup>
     <ReferencePath>C:\Users\jmanu\source\repos\Collatz\lib\;C:\Users\jmanu\source\repos\Collatz\lib\Newtonsoft.Json.13.0.1\</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
   </PropertyGroup>
 </Project>

@@ -19,11 +19,25 @@ namespace Collatz
             }
             return digits;
         }
+
+        public static Dictionary<int,int> DigitDistribution(List<int> digits)
+        {
+            Dictionary<int, int> distributionPairs=  new Dictionary<int, int>();
+            for(int i = 0; i < 10; i++)
+            {
+                distributionPairs.Add(i,0);
+            }
+            digits.ForEach(x =>
+            {
+                distributionPairs[x]++;
+            });
+            return distributionPairs;
+        }
         public static List<int> CollatzNumbers(int initial)
         {
             List<int> collatzNumbers = new List<int>();
             int c = initial;
-            while (c != 1)
+            while (c > 1)
             {
                 if (c % 2 == 0) //even
                 {

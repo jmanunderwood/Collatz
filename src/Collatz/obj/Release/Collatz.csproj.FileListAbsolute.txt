@@ -10,8 +10,6 @@ C:\Users\jmanu\source\repos\Collatz\Collatz\bin\Release\Collatz.application
 C:\Users\jmanu\source\repos\Collatz\Collatz\obj\Release\Collatz.exe.manifest
 C:\Users\jmanu\source\repos\Collatz\Collatz\obj\Release\Collatz.application
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Collatz.exe.config
-C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Collatz.exe.manifest
-C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Collatz.application
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Collatz.exe
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Collatz.pdb
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\bin\Release\Microsoft.Extensions.CommandLineUtils.dll
@@ -22,8 +20,6 @@ C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.csprojAssemb
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.Properties.Resources.resources
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.csproj.GenerateResource.cache
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.csproj.CoreCompileInputs.cache
-C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.exe.manifest
-C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.application
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.csproj.CopyComplete
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.exe
 C:\Users\jmanu\source\repos\Collatz\src\Collatz\obj\Release\Collatz.pdb

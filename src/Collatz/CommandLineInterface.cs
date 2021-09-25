@@ -17,7 +17,7 @@ namespace Collatz
             public int seed;
             public int[] collatzNumbers;
             public int stoppingTime;
-            public int[] leadingDigitPercentages; // =(int)N/10
+            
         }
 
         public static void InitStruct(CollatzOutput o)
@@ -25,10 +25,14 @@ namespace Collatz
             o.seed = -1;
             //o.collatzNumbers[0] = -1;
             o.stoppingTime = -1;
-            //o.leadingDigitPercentages[0] = -1;
+            //o.leadingDigits[0] = -1;
         }
+
+
         public static void Main(string[] args)
-        {            
+        {
+            List<int> leadingDigits = new List<int>(); 
+            
             CommandLineApplication commandLineApplication = new CommandLineApplication(throwOnUnexpectedArg: false);
 
             CommandOption seed = commandLineApplication.Option(
@@ -46,11 +50,11 @@ namespace Collatz
                 CommandOptionType.NoValue);
             CommandOption leadingDigit = commandLineApplication.Option(
                 "-l",
-                "Calculate the leading Digit percentages",
+                "Calculate the leading Digit distribution",
                 CommandOptionType.NoValue);
             CommandOption output = commandLineApplication.Option(
                 "-o | --output | -$ <filename.collatz>",
-                "Output file name ",
+                "Output to a .collatz file. ![TOO MUCH WORK; TOO LAZY; NOT WORKING]",
                 CommandOptionType.SingleValue);
             commandLineApplication.HelpOption("-? | -h | --help");
             
@@ -65,10 +69,6 @@ namespace Collatz
                 {
 
                     currentOutput.stoppingTime = currentOutput.collatzNumbers.Length;
-                }
-                if (leadingDigit.HasValue())
-                {
-
                 }
                 if (output.HasValue())
                 {
@@ -87,22 +87,36 @@ namespace Collatz
                     if (seed.HasValue()) //-r seed: Perform the algorithm on the range provided with seed=seed
                     {
                         int currentSeed = Int32.Parse(seed.Value());
-                        for (int i = 1; i <= n; i++)
+                        for (int i = 0; i < n; i++)
                         {
-                            rangeOutputs[i].collatzNumbers = Collatz.CollatzNumbers(i).ToArray();
+                            rangeOutputs[i].collatzNumbers = Collatz.CollatzNumbers(currentSeed+i).ToArray();
                             rangeOutputs[i].seed = currentSeed+i;
+                            if (leadingDigit.HasValue())
+                            {
+                                leadingDigits.AddRange(Collatz.LeadingDigits(rangeOutputs[i].collatzNumbers));
+                            }
                         }
                     }
                     else //-r: Perform the algorithm on the range provided with seed=1
                     {
 
-                        int currentSeed = Int32.Parse(seed.Value());
-                        for (int i = 1; i <= n; i++)
+                        int currentSeed = 4;
+                        Console.WriteLine("E");
+
+                        for (int i = 0; i < n; i++)
                         {
-                            rangeOutputs[i].collatzNumbers = Collatz.CollatzNumbers(i).ToArray();
+                            Console.WriteLine(rangeOutputs[i].collatzNumbers);
+
+                            rangeOutputs[i].collatzNumbers = Collatz.CollatzNumbers(currentSeed+i).ToArray();
                             rangeOutputs[i].seed = currentSeed+i;
+                            if (leadingDigit.HasValue())
+                            {
+                                leadingDigits.AddRange(Collatz.LeadingDigits(rangeOutputs[i].collatzNumbers));
+                            }
+
                         }
                     }
+                    
                     //If -r specified then display range values
                     /*
                     Iteration: 0
@@ -113,6 +127,7 @@ namespace Collatz
                     */
                     for (int i = 0; i < n; i++)
                     {
+                        
                         Console.WriteLine("Iteration: " + i);
                         Console.WriteLine("Seed: " + rangeOutputs[i].seed);
                         Console.WriteLine("Collatz Numbers: ");
@@ -126,9 +141,10 @@ namespace Collatz
                         //----------------------------------------------------------
                         for (int z = 0; z < 50; z++)
                         {
-                            Console.WriteLine("-");
+                            Console.Write("-");
                         }
                         Console.WriteLine();
+
                     }
                 }
                 else
@@ -152,8 +168,26 @@ namespace Collatz
                     {
                         commandLineApplication.ShowHelp();
                     }
+
+                    
                         
                 }
+                if (leadingDigit.HasValue())
+                {
+                    Console.WriteLine("Leading Digits Distribution");
+                    leadingDigits.Sort();
+                    Dictionary<int, int> LeadingDigitDistribution = new Dictionary<int, int>();
+                    LeadingDigitDistribution = Collatz.DigitDistribution(leadingDigits);
+                    
+                    foreach(KeyValuePair<int,int> i in LeadingDigitDistribution)
+                    {
+                        Console.WriteLine(i.Key+": "+i.Value);
+                    }
+
+                    Console.WriteLine();
+                }
+
+
                     return 0;
             }
             );
